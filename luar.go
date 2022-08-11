@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/yuin/gopher-lua"
+	"github.com/zyedidia/gopher-lua"
 )
 
 // New creates and returns a new lua.LValue for the given value. Values are

@@ -3,7 +3,7 @@ package luar
 import (
 	"reflect"
 
-	"github.com/yuin/gopher-lua"
+	"github.com/zyedidia/gopher-lua"
 )
 
 func chanIndex(L *lua.LState) int {

@@ -3,7 +3,7 @@ package luar
 import (
 	"reflect"
 
-	"github.com/yuin/gopher-lua"
+	lua "github.com/zyedidia/gopher-lua"
 )
 
 // Config is used to define luar behaviour for a particular *lua.LState.
@@ -38,7 +38,7 @@ func newConfig() *Config {
 
 // GetConfig returns the luar configuration options for the given *lua.LState.
 func GetConfig(L *lua.LState) *Config {
-	const registryKey = "github.com/layeh/gopher-luar"
+	const registryKey = "github.com/zyedidia/gopher-luar"
 
 	registry := L.Get(lua.RegistryIndex).(*lua.LTable)
 	lConfig, ok := registry.RawGetString(registryKey).(*lua.LUserData)

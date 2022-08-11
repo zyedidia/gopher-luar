@@ -2,7 +2,7 @@
 
 package luar
 
-import "github.com/yuin/gopher-lua"
+import "github.com/zyedidia/gopher-lua"
 
 func mapCall(L *lua.LState) int {
 	ref, _ := check(L, 1)

@@ -3,4 +3,6 @@ github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5P
 github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMnBNeIyt5eFwwo7qiLfzFZmjNmxjkiQlU=
 github.com/yuin/gopher-lua v0.0.0-20190206043414-8bfc7677f583 h1:SZPG5w7Qxq7bMcMVl6e3Ht2X7f+AAGQdzjkbyOnNNZ8=
 github.com/yuin/gopher-lua v0.0.0-20190206043414-8bfc7677f583/go.mod h1:gqRgreBUhTSL0GeU64rtZ3Uq3wtjOa/TB2YfrtkCbVQ=
+github.com/zyedidia/gopher-lua v0.0.0-20220811182220-44d3c0155041 h1:Z1WVjmNfDQdrJmtruWDskE6aHgXDg8DFqAGJ6k2ApU0=
+github.com/zyedidia/gopher-lua v0.0.0-20220811182220-44d3c0155041/go.mod h1:VNzP8GqEgw9ZAdRh7xZPK9DBr39YGjVNhVBMVRQvZbM=
 golang.org/x/sys v0.0.0-20190204203706-41f3e6584952/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=

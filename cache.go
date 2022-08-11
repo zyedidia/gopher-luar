@@ -3,7 +3,7 @@ package luar
 import (
 	"reflect"
 
-	"github.com/yuin/gopher-lua"
+	"github.com/zyedidia/gopher-lua"
 )
 
 func addMethods(L *lua.LState, c *Config, vtype reflect.Type, tbl *lua.LTable, ptrReceiver bool) {
@@ -181,7 +181,7 @@ func getMetatable(L *lua.LState, vtype reflect.Type) *lua.LTable {
 	}
 
 	mt.RawSetString("__tostring", L.NewFunction(tostring))
-	mt.RawSetString("__metatable", lua.LString("gopher-luar"))
+	mt.RawSetString("__metatable", lua.LString("ktluar"))
 	mt.RawSetString("methods", methods)
 
 	config.regular[vtype] = mt
@@ -198,7 +198,7 @@ func getTypeMetatable(L *lua.LState, t reflect.Type) *lua.LTable {
 	mt := L.CreateTable(0, 3)
 	mt.RawSetString("__call", L.NewFunction(typeCall))
 	mt.RawSetString("__eq", L.NewFunction(typeEq))
-	mt.RawSetString("__metatable", lua.LString("gopher-luar"))
+	mt.RawSetString("__metatable", lua.LString("ktluar"))
 
 	config.types = mt
 	return mt

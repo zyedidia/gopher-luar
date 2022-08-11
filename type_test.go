@@ -3,7 +3,7 @@ package luar
 import (
 	"testing"
 
-	"github.com/yuin/gopher-lua"
+	"github.com/zyedidia/gopher-lua"
 )
 
 func Test_type_slice(t *testing.T) {
@@ -47,5 +47,7 @@ func Test_type_metatable(t *testing.T) {
 
 	L.SetGlobal("newInt", NewType(L, int(0)))
 
-	testReturn(t, L, `return getmetatable(newInt) == "gopher-luar"`, "true")
+	testReturn(t, L, `return getmetatable(newInt) == "ktluar"`, "true")
 }
+
+

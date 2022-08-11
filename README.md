@@ -1,6 +1,6 @@
-# gopher-luar [![GoDoc](https://godoc.org/layeh.com/gopher-luar?status.svg)](https://godoc.org/layeh.com/gopher-luar)
+# ktluar [![GoDoc](https://godoc.org/layeh.com/ktluar?status.svg)](https://godoc.org/layeh.com/ktluar)
 
-gopher-luar simplifies data passing to and from [gopher-lua](https://github.com/yuin/gopher-lua).
+ktluar simplifies data passing to and from [gopher-lua](https://github.com/zyedidia/gopher-lua).
 
 Example usage:
 
@@ -10,8 +10,8 @@ package luar_test
 import (
     "fmt"
 
-    "github.com/yuin/gopher-lua"
-    "layeh.com/gopher-luar"
+    "github.com/zyedidia/gopher-lua"
+    "layeh.com/ktluar"
 )
 
 type User struct {
